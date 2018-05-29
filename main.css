@@ -1,0 +1,98 @@
+
+body{
+    background-image: url(img/egypt-hd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div{
+    margin-top: 50px;
+}
+
+h1, h2 {
+    margin-bottom: 50px;
+}
+
+.nav{
+    margin-top: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav>ul>li>a:hover {
+    margin-left: 50px;
+}
+
+a, a:focus{
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: red;
+}
+
+.floated{
+    float: left;
+    margin: 0 20px;
+}
+
+
+/*Paper style*/
+
+.paper {
+    background: url(img/papyrus.jpg);
+    padding: 30px;
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto;
+  }
+  
+  .paper,
+  .paper::before,
+  .paper::after {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .paper::before,
+  .paper::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background: url(img/papyrus2.jpg);
+  }
+  
+  .paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .paper::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }
+
+  /*Table*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #fff}
+
+th {
+    background-color: #FF7F50;
+    color: white;
+}
